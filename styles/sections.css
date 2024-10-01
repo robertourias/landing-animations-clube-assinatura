@@ -4,3 +4,17 @@
   max-width: 1200px;
   margin-inline: auto;
 }
+
+#header {
+  padding-block: 20px;
+
+  @media screen and (min-width: 1120px) {
+    padding-block: 56px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

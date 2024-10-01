@@ -1,6 +1,6 @@
 .btn-primary {
   all: unset;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
@@ -13,6 +13,10 @@
   overflow: hidden;
 
   position: relative;  
+
+  &.full {
+    display: flex;
+  }
 
   &::before {
     content: '';
@@ -45,7 +49,7 @@
 
 .btn-secondary {
   all: unset;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
@@ -58,6 +62,10 @@
   overflow: hidden;
 
   position: relative;  
+
+  &.full {
+    display: flex;
+  }
 
   &::before {
     content: '';
