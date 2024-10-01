@@ -41,16 +41,22 @@ body {
   color: var(--text-body);
   font: var(--body-md);
   background-color: var(--pink-dark);
-  font-family: "Raleway", sans-serif;
   color: var(--text-body);
+  background: var(--shape-background) url('../assets/hero-background.png') no-repeat center/cover;
 }
 
-h1, h2, h3 {
-  font-family: "Raleway", sans-serif;
+h1, h2, h3 {  
+  font: var(--title-md);
   color: var(--text-title);
 }
 
 a {
-  font-family: "Raleway", sans-serif;
-  color: inherit
+  transition: color 0.3s ease;
+  font: var(--link);
+  color: var(--blue-light);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text-body);
+  }
 }
