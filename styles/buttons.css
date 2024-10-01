@@ -9,6 +9,7 @@
   color: var(--text-title);  
   background-color: transparent;
   cursor: pointer;
+  z-index: 1;
   overflow: hidden;
 
   position: relative;  
@@ -53,6 +54,7 @@
   color: var(--text-title);  
   background-color: transparent;
   cursor: pointer;
+  z-index: 1;
   overflow: hidden;
 
   position: relative;  
