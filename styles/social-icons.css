@@ -1,0 +1,17 @@
+.social-icon {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--shape-stroke);
+
+    svg path {
+      fill: var(--text-body);
+    }
+  }
+}
