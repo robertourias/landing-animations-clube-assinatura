@@ -212,3 +212,40 @@
 
 
 }
+
+#subscriptions {
+  background: url('../assets/pricing-background.png') no-repeat center center/cover;
+  text-align: center;  
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 944px;
+    height: 944px;
+    left: calc(50% - 944px/2);
+    top: calc(50% - 944px/2 - 44px);
+
+    background: #000F1F;
+    filter: blur(284px);
+    z-index: 1;
+  }
+
+  .title {
+    position: relative;
+    font: var(--title-sm);
+    margin-bottom: 56px;
+    z-index: 2;
+  }
+
+  .cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+    height: 606px;
+    margin-bottom: 300px;
+  }
+}

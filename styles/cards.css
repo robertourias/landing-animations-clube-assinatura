@@ -3,11 +3,14 @@
   padding: 32px;
   background-color: var(--shape-base);
   border-radius: 24px;
+  border: 1px solid var(--shape-stroke);
+  z-index: 2;
 
   .header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 40px;
 
     .period {
       font: var(--title-xs);
@@ -46,12 +49,95 @@
     list-style: none;
     padding: 0;
     margin: 0 0 24px;
+    height: 133px;
+    align-items: flex-start;
+    justify-content: flex-end;
 
     li {
       padding-left: 22px;
       font: var(--body-xs);
       color: var(--text-body);
       background: url('../assets/star.svg') no-repeat left center/14px;
+    }
+  }
+
+  &.main {
+    background-color: var(--shape-hover);
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 32px;
+      width: 46px;
+      height: 50px;
+      background: url('../assets/Bunny.svg') no-repeat center center;
+      transform: translateY(-100%);
+    }
+
+    .header .period {
+      color: var(--pink-light)
+    }
+
+    .list li {
+      background-image: url('../assets/star-pink.svg');
+    }
+  }
+
+  &:nth-child(1) {
+    transform: rotate(-8deg) translateY(10%);
+    z-index: 1;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 26px;
+      background: url('../assets/star-pink.svg') no-repeat center center/100%;
+      transform: translateY(-100%) translateX(-120%);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 26px;
+      background: url('../assets/star-pink.svg') no-repeat center center/50%;
+      transform: translateY(0) translateX(-200%);
+    }
+  }
+
+  &:nth-child(3) {
+    transform: rotate(8deg) translateY(10%);
+    z-index: 1;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 26px;
+      height: 26px;
+      background: url('../assets/star-pink.svg') no-repeat center center/100%;
+      transform: translateY(60%) translateX(180%);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 26px;
+      height: 26px;
+      background: url('../assets/star-pink.svg') no-repeat center center/50%;
+      transform: translateY(120%) translateX(80%);
     }
   }
 
