@@ -249,3 +249,53 @@
     margin-bottom: 300px;
   }
 }
+
+#footer {  
+  background: url('../assets/book-trace-background.svg') no-repeat center top/cover;
+  padding-block: 170px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  hr {
+    border-color: var(--shape-stroke);
+    margin-block: 12px;
+  }
+
+  .social-list {
+    display: flex;
+    align-items: center;
+    gap: 4.8px;
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      li {
+        display: flex;
+        height: 24px;
+      }
+
+      h3 {
+        font: var(--title-xs);
+        color: var(--text-body);
+      }
+
+
+    }
+  }
+
+}
