@@ -28,7 +28,6 @@
   --body-xs: 400 .75rem/1.4 var(--ff);
   --button: 600 .875rem/1 var(--ff);
   --link: 500 .875rem/1 var(--ff);
-  --tag: 600 .625rem/1 var(--ff);
 }
 
 * {
@@ -45,54 +44,66 @@ body {
   color: var(--text-body);  
 
   .bg-ellipse-1 {
-    position: absolute;
-    width: 491px;
-    height: 491px;
-    left: calc(50% - 491px/2 + 696.5px);
-    top: 722px;
-    
-    background: #3F0F41;
-    filter: blur(334px);
+    @media (width > 1180px) {
+      position: absolute;
+      width: 491px;
+      height: 491px;
+      left: calc(50% - 491px/2 + 696.5px);
+      top: 722px;
+      background: #3F0F41;
+      filter: blur(334px);
+    }
   }
 
   .bg-ellipse-2 {
-    position: absolute;
-    width: 376px;
-    height: 376px;
-    left: calc(50% - 376px/2 - 791px);
-    top: 494px;
-    
-    background: #3F0F41;
-    filter: blur(254px);
+    @media (width > 1180px) {
+      position: absolute;
+      width: 376px;
+      height: 376px;
+      left: calc(50% - 376px/2 - 791px);
+      top: 494px;
+      
+      background: #3F0F41;
+      filter: blur(254px);
+    }
   }
 
   .bg-ellipse-3 {
-    position: absolute;
-    width: 538px;
-    height: 538px;
-    left: calc(50% - 538px/2 - 219px);
-    top: 987px;
-    
-    background: #3F0F41;
-    filter: blur(434px);
+    @media (width > 1180px) {
+      position: absolute;
+      width: 538px;
+      height: 538px;
+      left: calc(50% - 538px/2 - 219px);
+      top: 987px;
+      
+      background: #3F0F41;
+      filter: blur(434px);
+    }
   }
 
   .bg-ellipse-4 {
-    position: absolute;
-    width: 241px;
-    height: 241px;
-    left: calc(50% - 241px/2 + 696.5px);
-    top: 366px;
     
-    background: #3F0F41;
-    filter: blur(234px);
+    @media (width > 1180px) {
+      position: absolute;
+      width: 241px;
+      height: 241px;
+      left: calc(50% - 241px/2 + 696.5px);
+      top: 366px;
+      
+      background: #3F0F41;
+      filter: blur(234px);      
+    }
   }
 }
 
 h1, h2, h3 {  
-  font: var(--title-md);
+  font: var(--title-sm);
   color: var(--text-title);
   line-height: 1.2;
+
+  @media (width > 1180px) {
+    font: var(--title-md); 
+  }
 }
 
 a {
