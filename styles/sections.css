@@ -394,10 +394,11 @@
 }
 
 #footer {  
-  background: url('../assets/book-trace-background.svg') no-repeat center top/cover;
-  padding-block: 100px;
+  background: url('../assets/book-trace-background-mobile.svg') no-repeat center top/cover;
+  padding-block: 100px 50px;
 
   @media (width > 1180px) {
+    background: url('../assets/book-trace-background.svg') no-repeat center top/cover;
     padding-block: 170px;
   }
 
@@ -414,9 +415,20 @@
     }
   }
 
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (width > 1180px) {
+      justify-content: flex-start;
+    }
+  }
+
   hr {
     border-color: var(--shape-stroke);
     margin-block: 12px;
+    opacity: 0.5;
   }
 
   .social-list {
