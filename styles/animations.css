@@ -92,6 +92,26 @@
   }
 }
 
+@keyframes card-a-animation {  
+  0% {    
+    transform: rotate(0deg) translateY(0) translateX(100%);
+  }
+
+  100% {     
+    transform: rotate(-8deg) translateY(10%)  translateX(0);
+  }
+}
+
+@keyframes card-b-animation {  
+  0% {    
+    transform: rotate(0deg) translateY(0) translateX(-100%);
+  }
+
+  100% {     
+    transform: rotate(8deg) translateY(10%) translateX(0);
+  }
+}
+
 @media (width > 1180px) {
   @keyframes kit-img-2 {  
     0% {    

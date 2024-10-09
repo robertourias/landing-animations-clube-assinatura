@@ -121,7 +121,11 @@
 
   @media (width > 1180px) {
     &:nth-child(1) {
-      transform: rotate(-8deg) translateY(10%);
+      transform: rotate(0deg) translateY(0) translateX(100%);
+      animation: card-a-animation linear forwards;
+      animation-timeline: view();
+      animation-range-start: 20%;
+      animation-range-end: 40%;  
       z-index: 1;
       position: relative;
   
@@ -149,7 +153,11 @@
     }
   
     &:nth-child(3) {
-      transform: rotate(8deg) translateY(10%);
+      transform: rotate(0deg) translateY(0) translateX(-100%);
+      animation: card-b-animation linear forwards;
+      animation-timeline: view();
+      animation-range-start: 20%;
+      animation-range-end: 40%;
       z-index: 1;
       position: relative;
   
